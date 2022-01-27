@@ -10,3 +10,20 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+input{
+    border: 0;
+    outline: none;
+
+}
+.abs-center {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  h1{
+      font-size: 7rem;
+      color: lightgray
+  }
+  .bground{
+      background:whitesmoke
+  }
