@@ -36,11 +36,7 @@ const Home = () => {
 					</li>
 					{tasklist.map((tarea, i) => {
 						return (
-							<li
-								className="list-group-item border border-top-0"
-								key={i}>
-								{tarea}
-							</li>
+							<li className="list-group-item border border-top-0" key={i}>{tarea}</li>
 						);
 					})}
 				</ul>
