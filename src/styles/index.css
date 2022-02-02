@@ -27,3 +27,5 @@ input{
   .bground{
       background:whitesmoke
   }
+  span {display: none;}
+  li:hover span {display: block}

@@ -88,6 +88,26 @@ const Home = () => {
 								className="list-group-item border border-top-0"
 								key={i}>
 								{tarea.label}
+								<span className="position-absolute top-50 end-0 translate-middle">
+									<button
+										type="button"
+										className="btn btn-light text-danger show"
+										onClick={async (event) => {
+											const newTasklist = tasklist.filter(
+												(delTask, index) => {
+													if (index !== i) {
+														return true;
+													} else {
+														return false;
+													}
+												}
+											);
+											await updateTaskList(newTasklist);
+											getToDos();
+										}}>
+										X
+									</button>
+								</span>
 							</li>
 						);
 					})}
